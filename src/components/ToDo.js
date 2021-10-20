@@ -1,19 +1,12 @@
-import { useState } from "react"
+import React, { useState } from 'react'
+import ToDoForm from './ToDoForm'
 
- //define the function which will take in user input and return it to our app
-const ToDo = () => {
-    const [listItem, setItem] = useState("")
-
-    const addHandler = () => {
-
-        setItem("")
-    }
-
+function ToDo() {
     return (
         <div>
-            <button onClick={addHandler}>add</button>
+            <ToDoForm />
         </div>
-    );
+    )
 }
 
 export default ToDo
