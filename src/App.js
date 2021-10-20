@@ -1,11 +1,11 @@
 import './App.css';
-import ToDo from './components/ToDo.js'
+import ToDoList from './components/ToDoList';
 
 function App() {
   return (
-    <div className="App">
-      <h1>To Do</h1>
-      <ToDo />
+    <div className="todo-app">
+
+      <ToDoList />
     </div>
   );
 }
