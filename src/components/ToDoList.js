@@ -13,6 +13,12 @@ function ToDoList() {
         const newTodos = [todo, ...todos];
 
         setTodos(newTodos);
+    };
+
+    const removeTodo = id => {
+        const removeArr = [...todos].filter(todo  => todo.id !== id)
+
+        setTodos(removeArr);
     }
 
     const completeToDo = id => {
@@ -31,7 +37,7 @@ function ToDoList() {
         <div>
             <h1>What would you like to do Today?</h1>
             <ToDoForm onSubmit={addTodo} />
-            <ToDo todos={todos} completeToDo={completeToDo}/>
+            <ToDo todos={todos} completeToDo={completeToDo} removeTodo={removeTodo}/>
         </div>
     )
 }
