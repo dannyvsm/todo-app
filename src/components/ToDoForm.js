@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 
-function ToDoForm(props) {
+function TodoForm(props) {
     const [input, setInput] = useState('')
 
     const handleChange = e => {
@@ -28,9 +28,9 @@ function ToDoForm(props) {
                 className='todo-input'
                 onChange={handleChange}
             />
-            <button className='todo-btn'>Add</button>
+            <button className='todo-btn'>add</button>
         </form>
     )
 }
 
-export default ToDoForm
+export default TodoForm
