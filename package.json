@@ -1,6 +1,6 @@
 {
   "name": "todo",
-  "homepage": "https://dannyvsm.github.io/todo-app",
+  "homepage": "https://dannyvsm.github.io/todo-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
