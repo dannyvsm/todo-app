@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { RiDeleteBack2Line } from 'react-icons/ri'
 import { FiEdit2 } from 'react-icons/fi'
+import './todo.css'
 
 function Todo({todos, completeTodo, removeTodo}) {
     // const [edit, setEdit] = useState({

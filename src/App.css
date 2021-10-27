@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Rubik&display=swap");
+
+:root {
+  --light: #faf0f1;
+  --dark: #373e40;
+  --primary: #488286;
+  --secondary: #305252;
+  --main-font: "Karla", sans-serif;
+  --second-font: "Rubik", sans-serif;
+}
 
 body {
-    font-family: 'Nunito', sans-serif
+  font-family: var(--main-font);
+  font-weight: 300;
+  background-color: #faf0f1;
+  text-align: center;
 }
