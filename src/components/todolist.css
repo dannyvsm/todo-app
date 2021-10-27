@@ -1,4 +1,19 @@
 .list {
-    font-family: var(--main-font);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
 }
 
+.intro {
+  font-family: var(--main-font);
+  margin: 20px;
+}
+
+.add-todo {
+  width: 100%;
+}
+
+.user-list {
+  margin-top: 10px;
+}

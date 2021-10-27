@@ -1,37 +1,40 @@
-import React, { useState } from 'react'
-import './todoform.css'
+import React, { useState } from "react";
+import "./todoform.css";
+import { GrAddCircle } from "react-icons/gr";
 
 function TodoForm(props) {
-    const [input, setInput] = useState('')
+  const [input, setInput] = useState("");
 
-    const handleChange = e => {
-        setInput(e.target.value)
-    }
-    
-    const handleSubmit = e => {
-        e.preventDefault();
+  const handleChange = (e) => {
+    setInput(e.target.value);
+  };
 
-        props.onSubmit({
-            id: Math.floor(Math.random() * 10000),
-            text: input
-        });
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-        setInput('')
-    };
+    props.onSubmit({
+      id: Math.floor(Math.random() * 10000),
+      text: input,
+    });
 
-    return (
-        <form className='todo-form' onSubmit={handleSubmit}>
-            <input
-                type='text'
-                placeholder='add your todo'
-                value={input}
-                name='text'
-                className='todo-input'
-                onChange={handleChange}
-            />
-            <button className='todo-btn'>add</button>
-        </form>
-    )
+    setInput("");
+  };
+
+  return (
+    <form className="todo-form" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        placeholder="add your todo"
+        value={input}
+        name="text"
+        className="todo-input"
+        onChange={handleChange}
+      />
+      <button className="todo-btn">
+        <GrAddCircle className="add-btn" />
+      </button>
+    </form>
+  );
 }
 
-export default TodoForm
+export default TodoForm;

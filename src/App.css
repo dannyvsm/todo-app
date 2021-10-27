@@ -12,6 +12,6 @@
 body {
   font-family: var(--main-font);
   font-weight: 300;
-  background-color: #faf0f1;
+  background-color: var(--light);
   text-align: center;
 }

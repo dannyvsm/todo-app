@@ -4,8 +4,8 @@ import './header.css'
 function Header() {
     return (
         <div class="head">
-            <h1>this is a header</h1>
-            <p>gfg</p>
+            <h2>hello</h2>
+            <p>this is useful</p>
             
         </div>
     )
